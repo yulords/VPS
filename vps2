@@ -1,0 +1,106 @@
+getgenv().Key = "k5fe0a80236a95918cb25d7d"
+getgenv().Config = {
+	["AutoSave"] = true,
+	["ItemPrice"] = 1,
+	["WH_MatchComplete"] = true,
+	["AutoPlay"] = true,
+	["JoinerList"] = {
+		["1"] = "No joiner in the list"
+	},
+	["AutoUseAbility"] = true,
+	["UpgradeMethod"] = "Lowest Level (Spread Upgrade)",
+	["LSImplosion"] = 100000,
+	["LSDelay"] = 0.4,
+	["FeedLevel"] = 69,
+	["WH_BannerSummoned"] = true,
+	["PlaceGap"] = {
+		["Snowy Woods"] = 3.25,
+		["Aether Gateway"] = 3.25,
+		["Cursed Kingdom Portal"] = 3.25,
+		["Crystal Cave"] = 3.25,
+		["Hall of Mirrors"] = 3.25,
+		["Cursed Dungeon"] = 3.25,
+		["Cyber Gate"] = 3.25,
+		["Tower of Eternity"] = 3.25,
+		["Pantheon Passage"] = 3.25,
+		["Windmill Village"] = 3.25,
+		["Solar Temple Portal"] = 3.25,
+		["Demon Portal"] = 3.25,
+		["Lunar Temple Portal"] = 3.25,
+		["Cursed Train"] = 3.25,
+		["Haunted City"] = 3.25,
+		["Cursed Academy"] = 3.25,
+		["Swordsman Dojo"] = 3.25,
+		["Ancient Dragon Portal"] = 3.25,
+		["Blue Planet"] = 3.25,
+		["Ruined City"] = 3.25,
+		["Abyssal Gate"] = 3.25,
+		["Soulweaver Gate"] = 3.25,
+		["Underwater Temple"] = 3.25
+	},
+	["LeaveSellWave"] = 31,
+	["WHGemItemGotAlt"] = true,
+	["WebhookURL"] = "https://discord.com/api/webhooks/1271811417309188207/R90OSjbF1dVK3ZDDRBsOhE7mDYzJAMeT3iH1Udcu5awDJb8Ri8UsUXnXXIRxtJkXROvC",
+	["AutoRejoin"] = true,
+	["RequiredGem"] = 3000,
+	["AutoUpgrade"] = true,
+	["AutoClaimBattlePass"] = true,
+	["UnitPrice"] = 1,
+	["AutoJoinWorld"] = true,
+	["AutoFeedEquippedUnit"] = true,
+	["AutoSkip"] = true,
+	["DeleteMap"] = true,
+	["SelectWorld"] = "Windmill Village",
+	["WH_BoothBought"] = true,
+	["UpgradeAndPlace"] = true,
+	["HillHeight"] = {
+		["Snowy Woods"] = 2,
+		["Aether Gateway"] = 2,
+		["Cursed Kingdom Portal"] = 2,
+		["Crystal Cave"] = 2,
+		["Hall of Mirrors"] = 2,
+		["Cursed Dungeon"] = 2,
+		["Cyber Gate"] = 2,
+		["Tower of Eternity"] = 2,
+		["Pantheon Passage"] = 2,
+		["Windmill Village"] = 2,
+		["Solar Temple Portal"] = 2,
+		["Demon Portal"] = 2,
+		["Lunar Temple Portal"] = 2,
+		["Cursed Train"] = 2,
+		["Haunted City"] = 2,
+		["Cursed Academy"] = 2,
+		["Swordsman Dojo"] = 2,
+		["Ancient Dragon Portal"] = 2,
+		["Blue Planet"] = 2,
+		["Ruined City"] = 2,
+		["Abyssal Gate"] = 2,
+		["Soulweaver Gate"] = 2,
+		["Underwater Temple"] = 2
+	},
+	["ABBHopDelay"] = 0,
+	["JoinerCooldown"] = 0,
+	["LSLoop"] = 2,
+	["HardMode"] = true,
+	["Setx2GameSpeed"] = true,
+	["MiddlePos"] = {
+		["Windmill Village"] = "-1657.4727783203125, 24.114013671875, -522.752685546875"
+	},
+	["BoostFPS"] = true,
+	["AutoClaimQuest"] = true,
+	["AutoLeave"] = true,
+	["SelectChapter"] = "Infinite",
+	["AutoReturnLobby"] = true,
+	["LSBomb"] = 1,
+	["BlackScreen"] = true
+}
+repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
+
+repeat task.wait() until game:IsLoaded() 
+getgenv().Hermanos_Settings = {
+	['key'] = '0076e3d3-d2d5-42fe-b1f8-b2685fe2f6f7',
+  ['PC'] = 'vps2',
+	['mode'] = 'Website', --- Duo, Description, Website
+}
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
+	
