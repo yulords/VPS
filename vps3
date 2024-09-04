@@ -1,0 +1,59 @@
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Key = "a35e70ed88b934e717e8529a"
+getgenv().TargetUnitRoll = {
+    "Admiral Of Lava"
+}
+
+getgenv().notRollUnitTarget = true
+getgenv().UseSavePosition = false
+getgenv().GemRollUnit = 2500
+getgenv()["Black Screen"] = true
+getgenv()["Auto Leave Infinite"] = {
+    ["Auto Leave"] = true,
+    ["Method"] = {
+        ["Sell"] = false,
+        ["Leave"] = true,
+    },
+    ["Wave"] = 31
+}
+getgenv().Auto_Equip = {
+    ["Equip Best"] = true,
+    ["Custom Equip"] = {
+        ["Enabled"] = false,
+        ["Units"] = {
+            "Chief Of Lava",
+        },
+    },
+}
+getgenv().Portal = {
+    ["Enabled"] = false, 
+    ["Name Portal"] = "Demon Portal", -- support only 3 portal lunar and Demon and Ancient Dragon
+    ["Rarity Portal"] = {
+        ["Rare"] = true,
+        ["Epic"] = true,
+        ["Legendary"] = false,
+        ["Mythical"] = false,
+    },
+    ["Unit"] = {
+        ["Use All Unit"] = true,
+        ["Custom Unit"] = {
+            "Admiral Of Lava",
+        }
+    },
+}
+getgenv().Webhook =  {
+    ["Webhook"] = true,
+    ["Url"] = "https://discord.com/api/webhooks/1271771175919292446/J6Rt4bqub_NDef2wyasOzwmT1FODvaSikxxpJWXEmiPpg4FFJfhdW11dvA45-SCIPc1W",
+    ["Roll Unit"] = true,
+    ["Story/Infinite"] = true,
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-KaitunAD.lua"))()
+
+repeat task.wait() until game:IsLoaded() 
+getgenv().Hermanos_Settings = {
+	['key'] = '0076e3d3-d2d5-42fe-b1f8-b2685fe2f6f7',
+  ['PC'] = 'vps3',
+	['mode'] = 'Website', --- Duo, Description, Website
+}
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
+	
