@@ -7,7 +7,11 @@ getgenv().TargetUnitRoll = {
 getgenv().notRollUnitTarget = true
 getgenv().UseSavePosition = false
 getgenv().GemRollUnit = 2500
-getgenv()["Black Screen"] = true
+getgenv().Speed = {
+    ["Speed"] = 2,
+    ["Wave Active Speed"] = 2,
+}
+getgenv()["Black Screen"] = false
 getgenv()["Auto Leave Infinite"] = {
     ["Auto Leave"] = true,
     ["Method"] = {
@@ -27,7 +31,8 @@ getgenv().Auto_Equip = {
 }
 getgenv().Portal = {
     ["Enabled"] = false, 
-    ["Name Portal"] = "Demon Portal", -- support only 3 portal lunar and Demon and Ancient Dragon
+    ["Name Portal"] = "Demon Portal", -- support only 4 portal lunar and Demon and Ancient Dragon and Cursed Kingdom
+    ["Auto Get Portal"] = false, ---- support only portal Ancient Dragon and Cursed Kingdom
     ["Rarity Portal"] = {
         ["Rare"] = true,
         ["Epic"] = true,
@@ -49,10 +54,11 @@ getgenv().Webhook =  {
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-KaitunAD.lua"))()
 
+
 repeat task.wait() until game:IsLoaded() 
 getgenv().Hermanos_Settings = {
 	['key'] = '0076e3d3-d2d5-42fe-b1f8-b2685fe2f6f7',
-  ['PC'] = 'vps3',
+	['PC'] = 'vps3',
 	['mode'] = 'Website', --- Duo, Description, Website
 }
 task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
