@@ -1,106 +1,129 @@
-getgenv().Key = "k5fe0a80236a95918cb25d7d"
-getgenv().Config = {
-	["AutoSave"] = true,
-	["ItemPrice"] = 1,
-	["WH_MatchComplete"] = true,
-	["AutoPlay"] = true,
-	["JoinerList"] = {
-		["1"] = "No joiner in the list"
-	},
-	["AutoUseAbility"] = true,
-	["UpgradeMethod"] = "Lowest Level (Spread Upgrade)",
-	["LSImplosion"] = 100000,
-	["LSDelay"] = 0.4,
-	["FeedLevel"] = 69,
-	["WH_BannerSummoned"] = true,
-	["PlaceGap"] = {
-		["Snowy Woods"] = 3.25,
-		["Aether Gateway"] = 3.25,
-		["Cursed Kingdom Portal"] = 3.25,
-		["Crystal Cave"] = 3.25,
-		["Hall of Mirrors"] = 3.25,
-		["Cursed Dungeon"] = 3.25,
-		["Cyber Gate"] = 3.25,
-		["Tower of Eternity"] = 3.25,
-		["Pantheon Passage"] = 3.25,
-		["Windmill Village"] = 3.25,
-		["Solar Temple Portal"] = 3.25,
-		["Demon Portal"] = 3.25,
-		["Lunar Temple Portal"] = 3.25,
-		["Cursed Train"] = 3.25,
-		["Haunted City"] = 3.25,
-		["Cursed Academy"] = 3.25,
-		["Swordsman Dojo"] = 3.25,
-		["Ancient Dragon Portal"] = 3.25,
-		["Blue Planet"] = 3.25,
-		["Ruined City"] = 3.25,
-		["Abyssal Gate"] = 3.25,
-		["Soulweaver Gate"] = 3.25,
-		["Underwater Temple"] = 3.25
-	},
-	["LeaveSellWave"] = 31,
-	["WHGemItemGotAlt"] = true,
-	["WebhookURL"] = "https://discord.com/api/webhooks/1271811417309188207/R90OSjbF1dVK3ZDDRBsOhE7mDYzJAMeT3iH1Udcu5awDJb8Ri8UsUXnXXIRxtJkXROvC",
-	["AutoRejoin"] = false,
-	["RequiredGem"] = 3000,
-	["AutoUpgrade"] = true,
-	["AutoClaimBattlePass"] = true,
-	["UnitPrice"] = 1,
-	["AutoJoinWorld"] = true,
-	["AutoFeedEquippedUnit"] = true,
-	["AutoSkip"] = true,
-	["DeleteMap"] = true,
-	["SelectWorld"] = "Windmill Village",
-	["WH_BoothBought"] = true,
-	["UpgradeAndPlace"] = true,
-	["HillHeight"] = {
-		["Snowy Woods"] = 2,
-		["Aether Gateway"] = 2,
-		["Cursed Kingdom Portal"] = 2,
-		["Crystal Cave"] = 2,
-		["Hall of Mirrors"] = 2,
-		["Cursed Dungeon"] = 2,
-		["Cyber Gate"] = 2,
-		["Tower of Eternity"] = 2,
-		["Pantheon Passage"] = 2,
-		["Windmill Village"] = 2,
-		["Solar Temple Portal"] = 2,
-		["Demon Portal"] = 2,
-		["Lunar Temple Portal"] = 2,
-		["Cursed Train"] = 2,
-		["Haunted City"] = 2,
-		["Cursed Academy"] = 2,
-		["Swordsman Dojo"] = 2,
-		["Ancient Dragon Portal"] = 2,
-		["Blue Planet"] = 2,
-		["Ruined City"] = 2,
-		["Abyssal Gate"] = 2,
-		["Soulweaver Gate"] = 2,
-		["Underwater Temple"] = 2
-	},
-	["ABBHopDelay"] = 0,
-	["JoinerCooldown"] = 0,
-	["LSLoop"] = 2,
-	["HardMode"] = true,
-	["Setx2GameSpeed"] = true,
-	["MiddlePos"] = {
-		["Windmill Village"] = "-1657.4727783203125, 24.114013671875, -522.752685546875"
-	},
-	["BoostFPS"] = true,
-	["AutoClaimQuest"] = true,
-	["AutoLeave"] = true,
-	["SelectChapter"] = "Infinite",
-	["AutoReturnLobby"] = true,
-	["LSBomb"] = 1,
-	["BlackScreen"] = true
+repeat task.wait() until game.Players
+repeat task.wait() until game.Players.LocalPlayer
+repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
+_G.Team = "Pirate" -- Marine / Pirate
+_G.LogsDes = {
+    ["Enabled"] = false, -- เปิดการใช้งาน
+    ["SendAlias"] = false, -- เปิดการส่ง Alias
+    ["SendDescription"] = false, -- เปิดการส่ง Des
+    ["DelaySend"] = 5 -- วินาที
 }
-repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
+_G.WebHook = {
+    ["Enabled"] = false, -- เปิดการใช้งาน
+    ["Url"] = "", -- ลิ้งค์เว็บฮุก
+    ["Delay"] = 60 -- วินาที
+}
+_G.MainSettings = {
+        ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
+        ['FPSBOOST'] = true, -- ภาพกาก        
+        ['WhiteScreen'] = false, -- จอขาว
+        ['CloseUI'] = true, -- ปิด Ui
+        ["NotifycationExPRemove"] = true, -- ลบ ExP ที่เด้งตอนฆ่ามอน
+        ['AFKCheck'] = 300, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
+        ["LockFragments"] = 32000, -- ล็อคเงินม่วง
+        ["LockFruitsRaid"] = { -- ล็อคผลที่ไม่เอาไปลงดัน
+            [1] = "Dough-Dough",
+            [2] = "Dragon-Dragon"
+        }
+    }
+_G.Fruits_Settings = { -- ตั้งค่าผล
+    ['Main_Fruits'] = {'Dough-Dough'}, -- ผลหลัก ถ้ายังไม่ใช่ค่าที่ตั้งมันจะกินจนกว่าจะใช่หรือซื้อ
+    ['Select_Fruits'] = {"Flame-Flame", "Ice-Ice", "Quake-Quake", "Light-Light", "Dark-Dark", "Spider-Spider", "Rumble-Rumble", "Magma-Magma", "Buddha-Buddha"} -- กินหรือซื้อตอนไม่มีผล
+}
+_G.Quests_Settings = { -- ตั้งค่าเควสหลักๆ
+    ['Rainbow_Haki'] = true,
+    ["MusketeerHat"] = true,
+    ["PullLever"] = true,
+    ['DoughQuests_Mirror'] = {
+        ['Enabled'] = true,
+        ['UseFruits'] = true
+    }        
+}
+_G.Races_Settings = { -- ตั้งค่าเผ่า
+    ['Race'] = {
+        ['EnabledEvo'] = true,
+        ["v2"] = true,
+        ["v3"] = true,
+        ["Races_Lock"] = {
+            ["Races"] = { -- Select Races U want
+                ["Mink"] = true,
+                ["Human"] = true,
+                ["Fishman"] = true
+            },
+            ["RerollsWhenFragments"] = 20000 -- Random Races When Your Fragments is >= Settings
+        }
+    }
+}
+_G.Settings_Melee = { -- หมัดที่จะทำ
+    ['Superhuman'] = true,
+    ['DeathStep'] = true,
+    ['SharkmanKarate'] = true,
+    ['ElectricClaw'] = true,
+    ['DragonTalon'] = true,
+    ['Godhuman'] = true
+}
+_G.FarmMastery_Settings = {
+    ['Melee'] = true,
+    ['Sword'] = true,
+    ['DevilFruits'] = true,
+    ['Select_Swords'] = {
+        ["AutoSettings"] = true, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง        
+        ["ManualSettings"] = { -- ถ้าปรับ AutoSettings เป็น false มันจะฟาร์มดาบที่เลือกตรงนี้ ตัวอย่างข้างล่าง
+            "Saber",
+            "Tushita",
+            "Yama",            
+            "Cursed Dual Katana",
+            "Hallow Scythe",
+            "Shark Anchor",            
+            "Pole"
+        }
+    }
+}
+_G.SwordSettings = { -- ดาบที่จะทำ
+    ['Saber'] = true,
+    ["Pole"] = true,
+    ['MidnightBlade'] = true,
+    ['Shisui'] = true,
+    ['Saddi'] = true,
+    ['Wando'] = true,
+    ['Yama'] = true,
+    ['Rengoku'] = true,
+    ['Canvander'] = true,
+    ['BuddySword'] = true,
+    ['TwinHooks'] = true,
+    ['HallowScryte'] = true,
+    ['TrueTripleKatana'] = true,
+    ['CursedDualKatana'] = true
+}
+_G.SharkAnchor_Settings = {
+    ["Enabled_Farm"] = true,
+}
+_G.GunSettings = { -- ปืนที่จะทำ
+    ['Kabucha'] = true,
+    ['SerpentBow'] = true,
+    ['SoulGuitar'] = true
+}
+_G.SkillC = false --ปิดสกิว C
+getgenv().Key = "MARU-ENT9D-7P062-8LDI-CPAQ0-HUPO4"
+getgenv().id = "691886138180501514"
+getgenv().Script_Mode = "Kaitun_Script"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
 
-repeat task.wait() until game:IsLoaded() 
+repeat task.wait() until game:IsLoaded()
 getgenv().Hermanos_Settings = {
 	['key'] = '0076e3d3-d2d5-42fe-b1f8-b2685fe2f6f7',
-  ['PC'] = 'vps2',
-	['mode'] = 'Website', --- Duo, Description, Website
+	['PC'] = 'vps2',
+
+	['webhooks'] = {
+		['fullmoon'] = 'https://discord.com/api/webhooks/',
+		['mirage'] = 'https://discord.com/api/webhooks/',
+	},
+
+	['Sword'] = {'Cursed Dual Katana', 'Shark Anchor', 'Tushita', 'Yama', 'Dark Dagger', 'Hallow Scythe', 'Saber'},
+	['Gun'] = {'Soul Guitar', 'Serpent Bow', 'Kabucha', 'Acidum Rifle'},
+	['Accessories'] = {'Dark Coat', 'Leviathan Shield','Leviathan Crown', 'Pale Scarf', 'Kitsune Mask', 'Kitsune Ribbon'},
+	['Fruit'] = {'Kitsune', 'Leopard', 'Dragon',  'Spirit', 'Control', 'Venom', 'Shadow', 'Dough','Mammoth', 'T-Rex'},
 }
-task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/script.lua'))() end)
 	
