@@ -8,8 +8,8 @@ getgenv().Config = {
     ["Webhook"] = {
         ["ID"] = 0,
         ["Ping"] = false,
-        ["Result"] = false,
-        ["URL"] = ""
+        ["Result"] = true,
+        ["URL"] = "https://discord.com/api/webhooks/1271771175919292446/J6Rt4bqub_NDef2wyasOzwmT1FODvaSikxxpJWXEmiPpg4FFJfhdW11dvA45-SCIPc1W"
     },
     ["Safety Players"] = {},
     ["Auto Summon"] = false,
