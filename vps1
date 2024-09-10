@@ -95,6 +95,7 @@ getgenv().Config = {
 	["AutoReturnLobby"] = true,
 	["LSLoop"] = 2,
 	["BoostFPS"] = true,
+	["BlackScreen"] = true,
 	["AutoJoinWorld"] = true,
 	["AutoClaimQuest"] = true,
 	["UpgradeAndPlace"] = true,
