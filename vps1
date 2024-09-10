@@ -35,7 +35,9 @@ getgenv().Config = {
     ["Macro Mode Select"] = "Story",
     ["Auto Portal Mode"] = {
         [1] = "Demon"
-    },
+    }
+script_key="WSqLlCNUlgINLhbgbGIvWBKaVilPrmQn";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/buang5516/buanghub/main/PremiumBuangHub.lua"))()
     ["asd"] = "",
     ["AutoChallenge"] = false,
     ["mapSelect"] = "FooshaVillage",
