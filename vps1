@@ -61,6 +61,7 @@ getgenv().Config = {
 	["SelectChapter"] = "Infinite",
 	["WH_BoothBought"] = true,
 	["PortalRarity"] = {
+		["Legendary"] = true,
 		["Epic"] = true,
 		["Rare"] = true
 	},
