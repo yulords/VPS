@@ -8,8 +8,8 @@ getgenv().Config = {
     ["Webhook"] = {
         ["ID"] = 0,
         ["Ping"] = false,
-        ["Result"] = true,
-        ["URL"] = "https://discord.com/api/webhooks/1271771175919292446/J6Rt4bqub_NDef2wyasOzwmT1FODvaSikxxpJWXEmiPpg4FFJfhdW11dvA45-SCIPc1W"
+        ["Result"] = false,
+        ["URL"] = ""
     },
     ["Safety Players"] = {},
     ["Auto Summon"] = false,
@@ -35,9 +35,7 @@ getgenv().Config = {
     ["Macro Mode Select"] = "Story",
     ["Auto Portal Mode"] = {
         [1] = "Demon"
-    }
-script_key="WSqLlCNUlgINLhbgbGIvWBKaVilPrmQn";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/buang5516/buanghub/main/PremiumBuangHub.lua"))()
+    },
     ["asd"] = "",
     ["AutoChallenge"] = false,
     ["mapSelect"] = "FooshaVillage",
@@ -199,3 +197,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/buang5516/buanghub/ma
     ["Large Window"] = false,
     ["Auto Start Game/Skip"] = false
 }
+script_key="WSqLlCNUlgINLhbgbGIvWBKaVilPrmQn";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/buang5516/buanghub/main/PremiumBuangHub.lua"))()
+
+
+repeat task.wait() until game:IsLoaded() 
+getgenv().Hermanos_Settings = {
+	['key'] = '0076e3d3-d2d5-42fe-b1f8-b2685fe2f6f7',
+	['PC'] = 'DDC-1',
+	['mode'] = 'Website', --- Duo, Description, Website
+}
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
+	
