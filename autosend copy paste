@@ -6,17 +6,17 @@ getgenv().Config = {
         [1] = "No joiner in the list"
     },
     ["LSImplosion"] = 100000,
-    ["LSDelay"] = 0.4,
+    ["LSDelay"] = 0.2,
     ["FeedLevel"] = 69,
     ["LeaveSellWave"] = 1,
     ["RequiredGem"] = 50000,
     ["IgnoreMacroTiming"] = true,
-    ["ReceiverAccount2"] = "yuloalt12",
+    ["ReceiverAccount2"] = "yuloalt11",
     ["JoinerCooldown"] = 0,
-    ["JoinUsername"] = "yuloalt12",
+    ["JoinUsername"] = "yuloalt11",
     ["ABBHopDelay"] = 0,
     ["LSBomb"] = 1,
-    ["ReceiverAccount"] = "yuloalt12",
+    ["ReceiverAccount"] = "yuloalt11",
     ["TradeItem"] = {
         ["Trait Crystal"] = true
     },
