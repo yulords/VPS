@@ -1,28 +1,116 @@
 getgenv().Key = "k6511939ab82225d6f61347e"
 getgenv().Config = {
-    ["AutoSave"] = false,
-    ["ItemPrice"] = 1,
-    ["JoinerList"] = {
-        [1] = "No joiner in the list"
-    },
-    ["LSImplosion"] = 100000,
-    ["LSDelay"] = 0.4,
-    ["FeedLevel"] = 69,
-    ["LeaveSellWave"] = 1,
-    ["RequiredGem"] = 50000,
-    ["IgnoreMacroTiming"] = true,
-    ["ReceiverAccount2"] = "yuloalt11",
-    ["JoinerCooldown"] = 0,
-    ["JoinUsername"] = "yuloalt11",
-    ["ABBHopDelay"] = 0,
-    ["LSBomb"] = 1,
-    ["ReceiverAccount"] = "yuloalt11",
-    ["TradeItem"] = {
-        ["Trait Crystal"] = true
-    },
-    ["LSLoop"] = 2,
-    ["UnitPrice"] = 1,
-    ["AutoTradeItem"] = true,
-    ["AutoJoinTradeHub"] = true
+	["AutoSave"] = false,
+	["SelectPortal"] = {
+		["Demon Portal"] = true
+	},
+	["ItemPrice"] = 1,
+	["WH_MatchComplete"] = true,
+	["AutoPlay"] = true,
+	["JoinerList"] = {
+		[1] = "No joiner in the list"
+	},
+	["AutoUseAbility"] = true,
+	["Setx2GameSpeed"] = true,
+	["UpgradeMethod"] = "Lowest Level (Spread Upgrade)",
+	["AutoLeave"] = true,
+	["LSImplosion"] = 100000,
+	["LSDelay"] = 0.4,
+	["FeedLevel"] = 79,
+	["AutoUpgrade"] = true,
+	["PlaceGap"] = {
+		["Snowy Woods"] = 3.25,
+		["Aether Gateway"] = 3.25,
+		["Cursed Kingdom Portal"] = 3.25,
+		["Crystal Cave"] = 3.25,
+		["Hall of Mirrors"] = 3.25,
+		["Cursed Dungeon"] = 3.25,
+		["Blue Planet"] = 3.25,
+		["Tower of Eternity"] = 3.25,
+		["Pantheon Passage"] = 3.25,
+		["Windmill Village"] = 3.25,
+		["Abyssal Gate"] = 3.25,
+		["Demon Portal"] = 3.25,
+		["Solar Temple Portal"] = 3.25,
+		["Ruined City"] = 3.25,
+		["Haunted City"] = 3.25,
+		["Cursed Academy"] = 3.25,
+		["Lunar Temple Portal"] = 3.25,
+		["Ancient Dragon Portal"] = 3.25,
+		["Soulweaver Gate"] = 3.25,
+		["Cursed Train"] = 3.25,
+		["Cyber Gate"] = 3.25,
+		["Swordsman Dojo"] = 3.25,
+		["Underwater Temple"] = 3.25
+	},
+	["WHGemItemGotAlt"] = true,
+	["LeaveSellWave"] = 31,
+	["AutoFeedEquippedUnit"] = true,
+	["WebhookURL"] = "https://discord.com/api/webhooks/1271811417309188207/R90OSjbF1dVK3ZDDRBsOhE7mDYzJAMeT3iH1Udcu5awDJb8Ri8UsUXnXXIRxtJkXROvC",
+	["MiddlePos"] = {
+		["Demon Portal"] = "305.1899719238281, 1.8465049266815186, 26.643299102783203",
+		["Windmill Village"] = "-1667.2410888671875, 24.114013671875, -532.7444458007812"
+	},
+	["DeleteMap"] = true,
+	["LSBomb"] = 1,
+	["RequiredGem"] = 3000,
+	["AutoClaimBattlePass"] = true,
+	["AutoSkip"] = true,
+	["HardMode"] = true,
+	["SelectWorld"] = "Windmill Village",
+	["SelectChapter"] = "Infinite",
+	["WH_BoothBought"] = true,
+	["PortalRarity"] = {
+		["Legendary"] = true,
+		["Epic"] = true,
+		["Rare"] = true,
+		["Mythic"] = true
+	},
+	["AutoJoinPortal"] = true,
+	["HillHeight"] = {
+		["Snowy Woods"] = 2,
+		["Aether Gateway"] = 2,
+		["Cursed Kingdom Portal"] = 2,
+		["Crystal Cave"] = 2,
+		["Hall of Mirrors"] = 2,
+		["Cursed Dungeon"] = 2,
+		["Blue Planet"] = 2,
+		["Tower of Eternity"] = 2,
+		["Pantheon Passage"] = 2,
+		["Windmill Village"] = 2,
+		["Abyssal Gate"] = 2,
+		["Demon Portal"] = 2,
+		["Solar Temple Portal"] = 2,
+		["Ruined City"] = 2,
+		["Haunted City"] = 2,
+		["Cursed Academy"] = 2,
+		["Lunar Temple Portal"] = 2,
+		["Ancient Dragon Portal"] = 2,
+		["Soulweaver Gate"] = 2,
+		["Cursed Train"] = 2,
+		["Cyber Gate"] = 2,
+		["Swordsman Dojo"] = 2,
+		["Underwater Temple"] = 2
+	},
+	["ABBHopDelay"] = 0,
+	["JoinerCooldown"] = 0,
+	["AutoReturnLobby"] = true,
+	["LSLoop"] = 2,
+	["BoostFPS"] = true,
+	["BlackScreen"] = true,
+	["AutoJoinWorld"] = true,
+	["AutoClaimQuest"] = true,
+	["UpgradeAndPlace"] = true,
+	["WH_BannerSummoned"] = true,
+	["UnitPrice"] = 1
 }
 repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
+
+repeat task.wait() until game:IsLoaded() 
+getgenv().Hermanos_Settings = {
+	['key'] = '0076e3d3-d2d5-42fe-b1f8-b2685fe2f6f7',
+  ['PC'] = 'vps2',
+	['mode'] = 'Website', --- Duo, Description, Website
+}
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
+	
