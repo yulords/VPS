@@ -1,0 +1,18 @@
+getgenv().Config = {
+	["AutoSave"] = true,
+	["ItemPrice"] = 1,
+	["JoinerList"] = {
+		[1] = "No joiner in the list"
+	},
+	["AutoTradeItem"] = true,
+	["FeedLevel"] = 79,
+	["LeaveSellWave"] = 1,
+	["UnitPrice"] = 1,
+	["LSBomb"] = 1,
+	["RequiredGem"] = 3000,
+	["LSImplosion"] = 100000,
+	["JoinerCooldown"] = 0,
+	["ABBHopDelay"] = 0,
+	["LSLoop"] = 2,
+	["LSDelay"] = 0.4
+}
