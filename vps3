@@ -80,7 +80,6 @@ getgenv().Config = {
 	},
 	["AutoJoinWorld"] = true,
 	["Setx2GameSpeed"] = true,
-	["JoinHighest"] = true,
 	["AutoUpgrade"] = true,
 	["UnitPrice"] = 1
 }
