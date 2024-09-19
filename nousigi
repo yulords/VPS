@@ -103,7 +103,6 @@ getgenv().Config = {
 		["Rare"] = true
 	},
 	["Setx2GameSpeed"] = true,
-	["JoinHighest"] = true,
 	["UnitPrice"] = 1
 }
 repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
