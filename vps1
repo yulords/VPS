@@ -10,7 +10,7 @@ getgenv().Config = {
 	["JoinerList"] = {
 		[1] = "No joiner in the list"
 	},
-	["UpgradeMethod"] = "Randomize",
+	["UpgradeMethod"] = "Lowest Level (Spread Upgrade)",
 	["LSImplosion"] = 100000,
 	["FeedLevel"] = 79,
 	["AutoUpgrade"] = true,
