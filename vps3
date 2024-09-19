@@ -1,14 +1,21 @@
-
-getgenv().Key = "k6511939ab82225d6f61347e"
+getgenv().Key = "k5fe0a80236a95918cb25d7d"
 getgenv().Config = {
 	["AutoSave"] = true,
+	["SelectPortal"] = {
+		["Demon Portal"] = true
+	},
 	["ItemPrice"] = 1,
+	["WH_MatchComplete"] = true,
 	["AutoPlay"] = true,
 	["JoinerList"] = {
 		[1] = "No joiner in the list"
 	},
-	["AutoPlayNext"] = true,
+	["UpgradeMethod"] = "Lowest Level (Spread Upgrade)",
+	["LSImplosion"] = 100000,
 	["FeedLevel"] = 79,
+	["AutoUpgrade"] = true,
+	["BlackScreen"] = true,
+	["LeaveSellWave"] = 31,
 	["PlaceGap"] = {
 		["Snowy Woods"] = 3.25,
 		["Aether Gateway"] = 3.25,
@@ -37,19 +44,29 @@ getgenv().Config = {
 		["Crystal Cave"] = 3.25,
 		["Underwater Temple"] = 3.25
 	},
-	["LeaveSellWave"] = 1,
-	["AutoSkip"] = true,
-	["LSBomb"] = 1,
-	["RequiredGem"] = 3000,
-	["LSDelay"] = 0.4,
-	["LSImplosion"] = 100000,
+	["AutoFeedEquippedUnit"] = true,
+	["DeleteMap"] = true,
 	["MiddlePos"] = {
-		["Haunted City"] = "100.7784652709961, 297.7572326660156, 181.20709228515625"
+		["Haunted City"] = "100.7784652709961, 297.7572326660156, 181.20709228515625",
+		["Demon Portal"] = "288.89971923828125, 1.8465049266815186, 17.104093551635742"
 	},
+	["LSDelay"] = 0.4,
+	["SelectChapter"] = "Infinite",
+	["RequiredGem"] = 3000,
+	["AutoClaimBattlePass"] = true,
+	["AutoLeave"] = true,
+	["AutoClaimQuest"] = true,
 	["UpgradeAndPlace"] = true,
+	["AutoSkip"] = true,
 	["SelectWorld"] = "Haunted City",
-	["ABBHopDelay"] = 0,
+	["AutoJoinPortal"] = true,
+	["HardMode"] = true,
+	["AutoJoinWorld"] = true,
+	["LSBomb"] = 1,
+	["BoostFPS"] = true,
 	["LSLoop"] = 2,
+	["ABBHopDelay"] = 0,
+	["AutoReturnLobby"] = true,
 	["JoinerCooldown"] = 0,
 	["HillHeight"] = {
 		["Snowy Woods"] = 2,
@@ -79,10 +96,22 @@ getgenv().Config = {
 		["Crystal Cave"] = 2,
 		["Underwater Temple"] = 2
 	},
-	["AutoJoinWorld"] = true,
+	["PortalRarity"] = {
+		["Legendary"] = true,
+		["Epic"] = true,
+		["Mythic"] = true,
+		["Rare"] = true
+	},
 	["Setx2GameSpeed"] = true,
-	["JoinHighest"] = true,
-	["AutoUpgrade"] = true,
 	["UnitPrice"] = 1
 }
 repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
+
+repeat task.wait() until game:IsLoaded() 
+getgenv().Hermanos_Settings = {
+	['key'] = '0076e3d3-d2d5-42fe-b1f8-b2685fe2f6f7',
+	['PC'] = 'DDC-3',
+	['mode'] = 'Website', --- Duo, Description, Website
+}
+task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
+	
