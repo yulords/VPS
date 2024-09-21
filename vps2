@@ -1,117 +1,28 @@
-getgenv().Key = "k6511939ab82225d6f61347e"
+getgenv().Key = "k5fe0a80236a95918cb25d7d"
 getgenv().Config = {
-	["AutoSave"] = true,
-	["SelectPortal"] = {
-		["Demon Portal"] = true
-	},
-	["ItemPrice"] = 1,
-	["WH_MatchComplete"] = true,
-	["AutoPlay"] = true,
-	["JoinerList"] = {
-		[1] = "No joiner in the list"
-	},
-	["UpgradeMethod"] = "Lowest Level (Spread Upgrade)",
-	["LSImplosion"] = 100000,
-	["FeedLevel"] = 79,
-	["AutoUpgrade"] = true,
-	["BlackScreen"] = true,
-	["LeaveSellWave"] = 31,
-	["PlaceGap"] = {
-		["Snowy Woods"] = 3.25,
-		["Aether Gateway"] = 3.25,
-		["Cursed Kingdom Portal"] = 3.25,
-		["Swordsman Dojo"] = 3.25,
-		["Hall of Mirrors"] = 3.25,
-		["Magma Cave"] = 3.25,
-		["Cursed Dungeon"] = 3.25,
-		["Blue Planet"] = 3.25,
-		["Tower of Eternity"] = 3.25,
-		["Pantheon Passage"] = 3.25,
-		["Windmill Village"] = 3.25,
-		["Abyssal Gate"] = 3.25,
-		["Demon Portal"] = 3.25,
-		["Solar Temple Portal"] = 3.25,
-		["Lunar Temple Portal"] = 3.25,
-		["Golden Knight Portal"] = 3.25,
-		["Ruined City"] = 3.25,
-		["Haunted City"] = 3.25,
-		["Cursed Academy"] = 3.25,
-		["Soulweaver Gate"] = 3.25,
-		["Ancient Dragon Portal"] = 3.25,
-		["Cursed Train"] = 3.25,
-		["Underwater City"] = 3.25,
-		["Cyber Gate"] = 3.25,
-		["Crystal Cave"] = 3.25,
-		["Underwater Temple"] = 3.25
-	},
-	["AutoFeedEquippedUnit"] = true,
-	["DeleteMap"] = true,
-	["MiddlePos"] = {
-		["Haunted City"] = "100.7784652709961, 297.7572326660156, 181.20709228515625",
-		["Demon Portal"] = "288.89971923828125, 1.8465049266815186, 17.104093551635742"
-	},
-	["LSDelay"] = 0.4,
-	["SelectChapter"] = "Infinite",
-	["RequiredGem"] = 3000,
-	["AutoClaimBattlePass"] = true,
-	["AutoLeave"] = true,
-	["AutoClaimQuest"] = true,
-	["UpgradeAndPlace"] = true,
-	["AutoSkip"] = true,
-	["SelectWorld"] = "Haunted City",
-	["AutoJoinPortal"] = true,
-	["HardMode"] = true,
-	["AutoJoinWorld"] = true,
-	["LSBomb"] = 1,
-	["BoostFPS"] = true,
-	["LSLoop"] = 2,
-	["ABBHopDelay"] = 0,
-	["AutoReturnLobby"] = true,
-	["JoinerCooldown"] = 0,
-	["HillHeight"] = {
-		["Snowy Woods"] = 2,
-		["Aether Gateway"] = 2,
-		["Cursed Kingdom Portal"] = 2,
-		["Swordsman Dojo"] = 2,
-		["Hall of Mirrors"] = 2,
-		["Magma Cave"] = 2,
-		["Cursed Dungeon"] = 2,
-		["Blue Planet"] = 2,
-		["Tower of Eternity"] = 2,
-		["Pantheon Passage"] = 2,
-		["Windmill Village"] = 2,
-		["Abyssal Gate"] = 2,
-		["Demon Portal"] = 2,
-		["Solar Temple Portal"] = 2,
-		["Lunar Temple Portal"] = 2,
-		["Golden Knight Portal"] = 2,
-		["Ruined City"] = 2,
-		["Haunted City"] = 2,
-		["Cursed Academy"] = 2,
-		["Soulweaver Gate"] = 2,
-		["Ancient Dragon Portal"] = 2,
-		["Cursed Train"] = 2,
-		["Underwater City"] = 2,
-		["Cyber Gate"] = 2,
-		["Crystal Cave"] = 2,
-		["Underwater Temple"] = 2
-	},
-	["PortalRarity"] = {
-		["Legendary"] = true,
-		["Epic"] = true,
-		["Mythic"] = true,
-		["Rare"] = true
-	},
-	["Setx2GameSpeed"] = true,
-	["UnitPrice"] = 1
+    ["AutoSave"] = false,
+    ["ItemPrice"] = 1,
+    ["JoinerList"] = {
+        [1] = "No joiner in the list"
+    },
+    ["LSImplosion"] = 100000,
+    ["LSDelay"] = 0.2,
+    ["FeedLevel"] = 69,
+    ["LeaveSellWave"] = 1,
+    ["RequiredGem"] = 50000,
+    ["IgnoreMacroTiming"] = true,
+    ["ReceiverAccount2"] = "yuloalt12",
+    ["JoinerCooldown"] = 0,
+    ["JoinUsername"] = "yuloalt12",
+    ["ABBHopDelay"] = 0,
+    ["LSBomb"] = 1,
+    ["ReceiverAccount"] = "yuloalt12",
+    ["TradeItem"] = {
+        ["Trait Crystal"] = true
+    },
+    ["LSLoop"] = 2,
+    ["UnitPrice"] = 1,
+    ["AutoTradeItem"] = true,
+    ["AutoJoinTradeHub"] = true
 }
 repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
-
-repeat task.wait() until game:IsLoaded() 
-getgenv().Hermanos_Settings = {
-	['key'] = '0076e3d3-d2d5-42fe-b1f8-b2685fe2f6f7',
-	['PC'] = 'DDC-2',
-	['mode'] = 'Website', --- Duo, Description, Website
-}
-task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
-	
