@@ -54,7 +54,6 @@ getgenv().Config = {
 	["SelectChapter"] = "Infinite",
 	["RequiredGem"] = 3000,
 	["AutoClaimBattlePass"] = true,
-	["WebhookURL"] = "https://discord.com/api/webhooks/1271771175919292446/J6Rt4bqub_NDef2wyasOzwmT1FODvaSikxxpJWXEmiPpg4FFJfhdW11dvA45-SCIPc1W",
 	["AutoLeave"] = true,
 	["AutoClaimQuest"] = true,
 	["UpgradeAndPlace"] = true,
@@ -108,10 +107,11 @@ getgenv().Config = {
 }
 repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until Joebiden
 
+
 repeat task.wait() until game:IsLoaded() 
 getgenv().Hermanos_Settings = {
 	['key'] = '0076e3d3-d2d5-42fe-b1f8-b2685fe2f6f7',
-	['PC'] = 'DDC-1',
+	['PC'] = 'vps1',
 	['mode'] = 'Website', --- Duo, Description, Website
 }
 task.spawn(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() end)
