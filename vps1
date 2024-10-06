@@ -62,6 +62,7 @@ getgenv().Config = {
 	["AutoJoinPortal"] = true,
 	["HardMode"] = true,
 	["AutoJoinWorld"] = true,
+	["WebhookURL"] = "https://discord.com/api/webhooks/1271771175919292446/J6Rt4bqub_NDef2wyasOzwmT1FODvaSikxxpJWXEmiPpg4FFJfhdW11dvA45-SCIPc1W",
 	["LSBomb"] = 1,
 	["BoostFPS"] = true,
 	["LSLoop"] = 2,
